@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 应用名称 -->
+    <string name="app_name">计算工具箱</string>
+
+    <!-- Tab标签 -->
+    <string name="tab_calculator">计算器</string>
+    <string name="tab_converter">单位换算</string>
+    <string name="tab_currency">汇率换算</string>
+
+    <!-- 计算器 -->
+    <string name="calculator_title">计算器</string>
+    <string name="btn_clear">清除</string>
+    <string name="btn_backspace">退格</string>
+    <string name="btn_equal">等于</string>
+    <string name="history_title">历史记录</string>
+    <string name="copied">已复制</string>
+
+    <!-- 单位换算 -->
+    <string name="converter_title">单位换算</string>
+    <string name="converter_length">长度</string>
+    <string name="converter_weight">重量</string>
+    <string name="converter_area">面积</string>
+    <string name="converter_volume">体积</string>
+    <string name="converter_temperature">温度</string>
+    <string name="converter_speed">速度</string>
+    <string name="favorite">收藏</string>
+    <string name="search_unit">搜索单位</string>
+
+    <!-- 汇率换算 -->
+    <string name="currency_title">汇率换算</string>
+    <string name="last_updated">最后更新</string>
+    <string name="offline_mode">离线模式</string>
+    <string name="add_currency">添加币种</string>
+    <string name="search_currency">搜索币种</string>
+
+    <!-- 通用 -->
+    <string name="btn_cancel">取消</string>
+    <string name="btn_confirm">确认</string>
+    <string name="no_data">暂无数据</string>
+</resources>

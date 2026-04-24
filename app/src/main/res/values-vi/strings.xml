@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Tên ứng dụng -->
+    <string name="app_name">Hộp Công Cụ Tính Toán</string>
+
+    <!-- Tab -->
+    <string name="tab_calculator">Máy Tính</string>
+    <string name="tab_converter">Đổi Đơn Vị</string>
+    <string name="tab_currency">Tỷ Giá</string>
+
+    <!-- Máy tính -->
+    <string name="calculator_title">Máy Tính</string>
+    <string name="btn_clear">Xóa</string>
+    <string name="btn_backspace">Xóa lùi</string>
+    <string name="btn_equal">Bằng</string>
+    <string name="history_title">Lịch Sử</string>
+    <string name="copied">Đã sao chép</string>
+
+    <!-- Đổi đơn vị -->
+    <string name="converter_title">Đổi Đơn Vị</string>
+    <string name="converter_length">Chiều Dài</string>
+    <string name="converter_weight">Trọng Lượng</string>
+    <string name="converter_area">Diện Tích</string>
+    <string name="converter_volume">Thể Tích</string>
+    <string name="converter_temperature">Nhiệt Độ</string>
+    <string name="converter_speed">Tốc Độ</string>
+    <string name="favorite">Yêu Thích</string>
+    <string name="search_unit">Tìm đơn vị</string>
+
+    <!-- Tỷ giá -->
+    <string name="currency_title">Tỷ Giá</string>
+    <string name="last_updated">Cập Nhật Lần Cuối</string>
+    <string name="offline_mode">Chế Độ Ngoại Tuyến</string>
+    <string name="add_currency">Thêm Tiền Tệ</string>
+    <string name="search_currency">Tìm tiền tệ</string>
+
+    <!-- Chung -->
+    <string name="btn_cancel">Hủy</string>
+    <string name="btn_confirm">Xác Nhận</string>
+    <string name="no_data">Không có dữ liệu</string>
+</resources>
