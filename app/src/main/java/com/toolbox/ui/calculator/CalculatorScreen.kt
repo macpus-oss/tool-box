@@ -16,6 +16,7 @@ import androidx.compose.ui.unit.sp
 import com.toolbox.ui.theme.AccentOrange
 import com.toolbox.ui.theme.BrandPrimary
 import com.toolbox.ui.theme.DangerRed
+import net.objecthunter.exp4j.ExpressionBuilder
 import java.text.DecimalFormat
 import java.text.DecimalFormatSymbols
 import java.util.*
@@ -144,17 +145,33 @@ fun formatVietnameseNumber(number: String): String {
 // 简易计算（支持 + - × ÷）
 fun calculate(expr: String): String {
     return try {
-        val normalized = expr.replace("÷", "/").replace("×", "*")
-        val result = evaluateSimple(normalized)
-        result.toString()
+        val normalized = expr
+            .replace("÷", "/")
+            .replace("×", "*")
+            .replace("%", "/100")
+        val result = evaluateExpression(normalized)
+        // 格式化结果，移除不必要的 .0
+        if (result == result.toLong().toDouble()) {
+            result.toLong().toString()
+        } else {
+            result.toString()
+        }
     } catch (e: Exception) {
         "Lỗi"  // 错误
     }
 }
 
-// 极简表达式求值（仅支持 四则运算）
-fun evaluateSimple(expr: String): Double {
-    // 实际项目中应引入更完整的表达式解析库
-    // 此处为骨架代码，仅作演示
-    return 0.0
+// 使用 exp4j 表达式求值
+fun evaluateExpression(expr: String): Double {
+    if (expr.isBlank()) {
+        return 0.0
+    }
+    val expression = ExpressionBuilder(expr)
+        .functions(
+            net.objecthunter.exp4j.function.Function("sqrt", 1) { 
+                kotlin.math.sqrt(it[0]) 
+            }
+        )
+        .build()
+    return expression.evaluate()
 }

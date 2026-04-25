@@ -78,6 +78,9 @@ dependencies {
     // Play Billing
     implementation(libs.play.billing.ktx)
 
+    // Expression Parser
+    implementation(libs.exp4j)
+
     // Room (本地缓存，汇率数据)
     implementation(libs.androidx.room.runtime)
     implementation(libs.androidx.room.ktx)

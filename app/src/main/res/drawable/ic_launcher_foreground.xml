@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- 启动器前景图标 (工具箱主题) -->
+    <group
+        android:translateX="27"
+        android:translateY="27">
+        <!-- 盒子主体 -->
+        <path
+            android:fillColor="#FF6B35"
+            android:pathData="M4,8h46v38c0,2.21 -1.79,4 -4,4H8c-2.21,0 -4,-1.79 -4,-4V8z"/>
+        <!-- 盒子盖子 -->
+        <path
+            android:fillColor="#E55A2B"
+            android:pathData="M4,4h46v4H4z"/>
+        <!-- 工具图标 - 扳手 -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M18,20h8v4h-8zM22,16l4,4 -2,2 -4,-4z"/>
+        <!-- 工具图标 - 螺丝刀 -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M30,20h8v4h-8zM34,16l4,4 -2,2 -4,-4z"/>
+        <!-- 齿轮 -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M27,32m-6,0a6,6 0,1 1,12 0a6,6 0,1 1,-12 0"/>
+        <path
+            android:fillColor="#FF6B35"
+            android:pathData="M27,32m-2,0a2,2 0,1 1,4 0a2,2 0,1 1,-4 0"/>
+    </group>
+</vector>

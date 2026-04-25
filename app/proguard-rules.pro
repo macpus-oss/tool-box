@@ -30,6 +30,10 @@
 # Google Play Billing
 -keep class com.android.billingclient.** { *; }
 
+# exp4j (表达式解析库)
+-dontwarn net.objecthunter.exp4j.**
+-keep class net.objecthunter.exp4j.** { *; }
+
 # 保留 Manifest 中注册的组件
 -keep public class * extends android.app.Activity
 -keep public class * extends android.app.Application
